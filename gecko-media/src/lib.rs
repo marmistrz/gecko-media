@@ -342,8 +342,9 @@ mod tests {
             false
         );
         assert_eq!(gecko_media.is_type_supported("video/mp4"), true);
+        assert_eq!(gecko_media.is_type_supported("video/webm"), true);
         assert_eq!(gecko_media.is_type_supported("audio/mp4"), true);
-        assert_eq!(gecko_media.is_type_supported("audio/webm"), false);
+        assert_eq!(gecko_media.is_type_supported("audio/webm"), true);
         assert_eq!(gecko_media.is_type_supported("audio/mp3"), false);
         assert_eq!(gecko_media.is_type_supported("audio/flac"), false);
         assert_eq!(gecko_media.is_type_supported("audio/ogg"), false);
